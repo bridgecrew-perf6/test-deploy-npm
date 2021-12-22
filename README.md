@@ -1,6 +1,6 @@
 # eacz-product-card
 
-test package for npm
+test package for deploy to npm
 
 ### Esteban Andres Canteros
 
@@ -8,28 +8,24 @@ test package for npm
 
 ```
 import {ProductCard, ProductImage, ProductTitle, ProductButtons} from 'eacz-product-card'
-
 ```
 
-
 ```
- <ProductCard 
-        key={product.id}
-        product={product}
-        initialValues={{
-          count: 4,
-          maxCount: 21
-        }}
-      >
-        {
-          ({reset, count, increasedBy, isMaxCountReached}) => (
-            <>  
-              <ProductImage />
-              <ProductTitle />
-              <ProductButtons />
-            </>
-          )
-        }
-      
+ <ProductCard
+    product={product}
+    initialValues={{
+      count: 4,
+      maxCount: 21
+    }}
+  >
+    {
+      ({reset, count, increasedBy, isMaxCountReached}) => (
+        <>
+          <ProductImage />
+          <ProductTitle />
+          <ProductButtons />
+        </>
+      )
+    }
   </ProductCard>
 ```

@@ -1,13 +1,29 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../.';
+import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../.';
 
 const App = () => {
+  const product = {
+    id: '1',
+    title: 'Coffee Mug - Card',
+  };
   return (
-    <div>
-      <Thing />
-    </div>
+    <ProductCard
+      product={product}
+      initialValues={{
+        count: 4,
+        maxCount: 21,
+      }}
+    >
+      {({ reset, count, increasedBy, isMaxCountReached }) => (
+        <>
+          <ProductImage />
+          <ProductTitle />
+          <ProductButtons />
+        </>
+      )}
+    </ProductCard>
   );
 };
 
