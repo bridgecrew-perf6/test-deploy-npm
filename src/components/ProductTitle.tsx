@@ -1,3 +1,4 @@
+import React from 'react'
 import { CSSProperties, useContext } from "react"
 import { productContext } from "./ProductCard"
 import styles from '../styles/styles.module.css'

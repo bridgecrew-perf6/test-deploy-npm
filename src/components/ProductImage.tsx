@@ -1,3 +1,4 @@
+import React from 'react'
 import { CSSProperties, useContext } from "react";
 import noImage from '../assets/no-image.jpg'
 import { productContext } from "./ProductCard";
