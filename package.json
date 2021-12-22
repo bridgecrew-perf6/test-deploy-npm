@@ -36,6 +36,11 @@
   "name": "eacz-product-card",
   "author": "Esteban Canteros",
   "module": "dist/eacz-product-card.esm.js",
+  "repository": {
+    "url": "https://github.com/eacz/test-deploy-npm",
+    "type": "git"
+  },
+  "homepage": "https://github.com/eacz",
   "size-limit": [
     {
       "path": "dist/eacz-product-card.cjs.production.min.js",
