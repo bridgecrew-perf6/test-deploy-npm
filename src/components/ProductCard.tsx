@@ -14,7 +14,7 @@ export interface Props extends ExtendsStyles {
   children: (args: ProductCardHandlers) => JSX.Element
   onChange?: (args: OnChangeArgs) => void,
   value?: number,
-  initialValues: ProductCardInitialValues
+  initialValues?: ProductCardInitialValues
 }
 
 

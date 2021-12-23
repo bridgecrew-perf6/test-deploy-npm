@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImage should match snapshot 1`] = `
+<div
+  className="productCard "
+>
+  <img
+    alt="Product"
+    className="productImg "
+    src="./coffee-mug.png"
+  />
+</div>
+`;
+
+exports[`ProductImage should match snapshot with custom img 1`] = `
+<img
+  alt="Product"
+  className="productImg "
+  src="./coffee-img.png"
+/>
+`;
