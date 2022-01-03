@@ -23,10 +23,7 @@ const ProductCard = ({product, children, className = '', style, onChange, value,
   return (
     <Provider
       value={{
-        productCount,
-        increasedBy,
-        product,
-        maxCount
+        productCount, increasedBy, product, maxCount
       }}
     >
       <div style={style} className={`${styles.productCard} ${className}`} >
